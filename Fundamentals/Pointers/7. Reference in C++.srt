@@ -1,0 +1,245 @@
+0
+1
+00:00:00,360 --> 00:00:06,620
+In this video we will learn about reference. Reference feature is available only in C++.
+1
+
+2
+00:00:06,620 --> 00:00:14,910
+This is not a part of C language.So, let us understand reference. A reference is a nickname given to a
+2
+
+3
+00:00:14,910 --> 00:00:18,700
+variable or alias given to a variable.
+3
+
+4
+00:00:18,930 --> 00:00:20,310
+Let me write and show you.
+4
+
+5
+00:00:20,340 --> 00:00:25,870
+Suppose this is a function, so I am using a main ( ) function, main ( )
+5
+
+6
+00:00:25,950 --> 00:00:32,290
+Suppose already I have a variable some name a and it is having value 10.
+6
+
+7
+00:00:33,050 --> 00:00:35,700
+So, how it looks like inside the main memory is
+7
+
+8
+00:00:35,700 --> 00:00:42,990
+This is the main function, inside the code section, and inside its stack frame there is a variable having
+8
+
+9
+00:00:42,990 --> 00:00:46,570
+value name a and with value 10.
+9
+
+10
+00:00:46,860 --> 00:00:49,980
+Suppose there is some code in main ( ) function.
+10
+
+11
+00:00:49,980 --> 00:00:55,060
+Now inside this I want to have a reference to that variable a.
+11
+
+12
+00:00:55,340 --> 00:01:04,400
+So the method of declaring reference is
+int r ; r is a reference.
+12
+
+13
+00:01:04,500 --> 00:01:10,360
+You can use any name, I'm using r. Then how to make it as a reference? write &
+13
+
+14
+00:01:10,380 --> 00:01:15,310
+& just before the variable name. See, if nothing is there before the variable name,
+14
+
+15
+00:01:15,330 --> 00:01:18,590
+it is a data variable, if there is a * before the variable name,
+15
+
+16
+00:01:18,610 --> 00:01:21,670
+it's a pointer, and if & is before the variable name,
+16
+
+17
+00:01:21,700 --> 00:01:26,380
+It's a reference. Now, this reference must be initialized when declared.
+17
+
+18
+00:01:26,410 --> 00:01:31,960
+This is the declaration and assigned with a. So, this is initialized with a.
+18
+
+19
+00:01:32,410 --> 00:01:36,490
+So what does it mean when you have a reference that is referring to a?
+19
+
+20
+00:01:36,490 --> 00:01:40,380
+This means, this a itself is called as r.
+20
+
+21
+00:01:41,350 --> 00:01:49,780
+So, that same is having one more name r. So you can call this value with name a as well as with r.
+21
+
+22
+00:01:50,140 --> 00:01:54,010
+So now you have 2 names for the same value inside the memory.
+22
+
+23
+00:01:54,010 --> 00:02:00,970
+So it means, if that variable a is occupying 2 bytes of memory, let's say 200 is the address and 201,
+23
+
+24
+00:02:00,970 --> 00:02:04,040
+2 bytes and value 10.
+24
+
+25
+00:02:04,060 --> 00:02:06,090
+Now what is the address of a? 200.
+25
+
+26
+00:02:06,400 --> 00:02:09,080
+What is the address of r? That is also 200.
+26
+
+27
+00:02:10,060 --> 00:02:19,750
+So, it means, if I print using cout<<a; I'll get the value 10, and if I say, r++, then this
+27
+
+28
+00:02:19,750 --> 00:02:24,940
+means this value is increased to 11 because the same value is r now.
+28
+
+29
+00:02:25,270 --> 00:02:27,230
+So, address of r is also 200.
+29
+
+30
+00:02:28,180 --> 00:02:38,320
+If I say cout<<r; then it will print value 11. So, the same value if I again say cout<<a; then I'll get
+30
+
+31
+00:02:38,320 --> 00:02:39,880
+the same value.
+31
+
+32
+00:02:39,940 --> 00:02:45,930
+11. So a reference is nothing but another name to a variable.
+32
+
+33
+00:02:45,940 --> 00:02:51,250
+Now the question is, Why do you need another name to the same variable? when you already have the name
+33
+
+34
+00:02:51,370 --> 00:02:53,030
+a, why do you want another name r?
+34
+
+35
+00:02:53,050 --> 00:02:57,870
+So basically, this is useful in parameter passing, and
+35
+
+36
+00:02:57,880 --> 00:03:03,430
+this is a very useful feature of C++; for writing small functions,
+36
+
+37
+00:03:03,430 --> 00:03:10,070
+we use references instead of using pointers. So when we learn about the parameter passing, that time I
+37
+
+38
+00:03:10,070 --> 00:03:14,110
+will explain you what is the usage of reference. Right now,
+38
+
+39
+00:03:14,110 --> 00:03:20,230
+In my example program this is a simple main function, in this, I don't need any reference, because already
+39
+
+40
+00:03:20,230 --> 00:03:27,770
+I have 'a', I can use 'a'. But, for explanation I have used a simple code what a reference means, Reference is
+40
+
+41
+00:03:27,820 --> 00:03:31,050
+nothing but another name given to a variable.
+41
+
+42
+00:03:31,150 --> 00:03:34,510
+So the actual name is a and this is alias, 
+42
+
+43
+00:03:34,720 --> 00:03:41,450
+So 'r' is just another name of 'a'. Now, that's it about reference.
+43
+
+44
+00:03:41,450 --> 00:03:42,740
+So what is reference,
+44
+
+45
+00:03:42,740 --> 00:03:45,290
+How to declare it and how to initialize it,
+45
+
+46
+00:03:45,470 --> 00:03:46,270
+I have explained.
+46
+
+47
+00:03:46,890 --> 00:03:49,600
+Now, what is the actual purpose of reference?
+47
+
+48
+00:03:49,610 --> 00:03:55,400
+We will see that in coming videos, where I will talk about functions and parameter passing.
+48
+
+49
+00:03:55,400 --> 00:03:56,060
+So, that's all in this video.
