@@ -1,0 +1,15 @@
+class Node{
+  int data;
+  Node prev,next;
+      Node(int value){
+    this.data=value;
+    this.prev=null;
+    this.next=null;
+}
+
+class DoublyLinkedlist{
+        Node first;
+        Node last;
+        DoublyLinkedlist(){
+          first=last=null;
+}
