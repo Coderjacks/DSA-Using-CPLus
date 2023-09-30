@@ -1,3 +1,35 @@
+/*
+Algo for insertion at begin in doubly linked list
+1.Read value
+2.set Node new_node=new Node(value)
+3.if(first==null):
+        1.set first = new_node
+        2.set last=new_node
+  otherwise:
+         a.set first.prev=new_node
+         b.set new_node.next=first
+         c.set first=new_node
+
+Algo for forward travarsal of doubly linked list
+1.check if first !=null, then 
+      1.set pos=first;
+      2.while(pos!=null):  
+          a.print pos.data
+          b.set pos=pos.next
+otherwise
+  no node to traverse
+
+Algo for backward travarsal of doubly linked list
+1.check if first !=null, then 
+      1.set pos=last;
+      2.while(pos!=first):  
+          a.print pos.data
+          b.set pos=pos.prev
+otherwise
+  no node to traverse
+*/
+
+
 class Node{
   int data;
   Node prev,next;
